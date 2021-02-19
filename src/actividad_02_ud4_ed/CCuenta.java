@@ -46,7 +46,7 @@ public class CCuenta {
     }
    
     /**
-    * @return retorna el nombre obtenido
+    * @return <code>nombre</code>retorna el nombre obtenido
     */
     
     public String obtenerNombre()
@@ -55,7 +55,7 @@ public class CCuenta {
     }
 
     /** 
-    * @return retorna el estado del saldo
+    * @return <code>saldo</code> retorna el estado del saldo
     */
     
      public double estado ()
@@ -65,7 +65,7 @@ public class CCuenta {
     /** Metodo para ingresar dinero
     *  
     * @param cantidad Dinero a sacar de la cuenta
-    * @throws Esception Controlamos que la cantidad ingresada no sea negativa
+    * @throws Exception Controlamos que la cantidad ingresada no sea negativa
      */
     
     public void ingresar(double cantidad) throws Exception
@@ -79,7 +79,8 @@ public class CCuenta {
     *  
     * @param cantidad Dinero a sacar de la cuenta
     * @see estado() Estado de la cuenta
-    * @throws Esception Controlamos que la cantidad ingresada no sea negativa
+    * * @throws Exception Controlamos que la cantidad ingresada no sea negativa
+    * @throws Exception Controlamos que no se retiren cantidades superiores al saldo
      */
    
     public void retirar (double cantidad) throws Exception
@@ -92,7 +93,7 @@ public class CCuenta {
     }
     
     /**
-    * @return retorna la cuenta obtenida
+    * @return <code>cuenta</code> retorna la cuenta obtenida
     */
     
     public String obtenerCuenta ()
@@ -117,7 +118,7 @@ public class CCuenta {
   }
 
  /**
-    * @return retorna el tipo de interés
+    * @return <code>tipoInterés</code> retorna el tipo de interés
     */
   
   public double getTipoInterés() {
