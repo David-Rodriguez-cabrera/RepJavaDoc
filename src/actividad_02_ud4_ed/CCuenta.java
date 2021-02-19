@@ -4,20 +4,25 @@
  * and open the template in the editor.
  */
 package actividad_02_ud4_ed;
+
 /**
 * @author David Rodriguez
 */
 
+
 public class CCuenta {
 
-
+/** Definicion de atributos de la clase Ccuenta
+ * 
+ */
   
   protected String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
 
-  
+    /** Constructor sin argumentos
+     */
     public CCuenta ()
     {
     }
@@ -46,7 +51,7 @@ public class CCuenta {
     }
    
     /**
-    * @return <code>nombre</code>retorna el nombre obtenido
+    * @return <code>nombre</code>retorna el nombre del titular
     */
     
     public String obtenerNombre()
@@ -55,7 +60,7 @@ public class CCuenta {
     }
 
     /** 
-    * @return <code>saldo</code> retorna el estado del saldo
+    * @return <code>saldo</code> retorna el saldo disponible en la cuenta
     */
     
      public double estado ()
@@ -78,9 +83,7 @@ public class CCuenta {
     /** Metodo para ingresar dinero
     *  
     * @param cantidad Dinero a sacar de la cuenta
-    * @see estado() Estado de la cuenta
-    * * @throws Exception Controlamos que la cantidad ingresada no sea negativa
-    * @throws Exception Controlamos que no se retiren cantidades superiores al saldo
+    * @throws Exception Controlamos que no se retiren cantidades negativas ni superiores al saldo
      */
    
     public void retirar (double cantidad) throws Exception
@@ -93,6 +96,7 @@ public class CCuenta {
     }
     
     /**
+     * Devuelve el numero de cuenta
     * @return <code>cuenta</code> retorna la cuenta obtenida
     */
     
@@ -102,7 +106,7 @@ public class CCuenta {
     }
 
   /**
-    * @param cuenta Establecer cuenta
+    * @param cuenta Establece la cuenta
     */
     
   public void setCuenta(String cuenta) {
@@ -110,7 +114,8 @@ public class CCuenta {
   }
 
   /**
-    * @param saldo Establecer saldo
+   * Asignamos valor al saldo
+    * @param saldo Establece el saldo
     */
   
   public void setSaldo(double saldo) {
@@ -118,6 +123,7 @@ public class CCuenta {
   }
 
  /**
+  * Nos devuelve el tipo de interes
     * @return <code>tipoInterés</code> retorna el tipo de interés
     */
   
@@ -126,7 +132,8 @@ public class CCuenta {
   }
 
   /**
-    * @param tipoInterés Establecer tipoInterés
+    * Asignamos valor al tipo de interes
+    * @param tipoInterés Establece el tipoInterés
     */
   
   public void setTipoInterés(double tipoInterés) {

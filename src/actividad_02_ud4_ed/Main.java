@@ -12,12 +12,15 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/** clase main
+ * 
+ * @author David Rodriguez
+ */
 public class Main {
     static BufferedReader dato = new BufferedReader(new InputStreamReader(System.in));
 
    /**
-    * @param args Nombre de array
+    * @param args the command line arguments
     */
     public static void main(String[] args) {
         CCuenta cuenta1;
